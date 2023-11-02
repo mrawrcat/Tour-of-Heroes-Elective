@@ -1,0 +1,16 @@
+<div class="dashboard-menu">
+    <h2>Top Heroes</h2>
+    <div class="heroes-menu">
+        <button class="topHeroesBtn" *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+            {{hero.name}}
+        </button>
+    </div>
+</div>
+<div class="dashboard-menu">
+    <h2>Top Sidekicks</h2>
+    <div class="sidekicks-menu">
+        <button class="topSidekicksBtn" *ngFor="let sidekick of sidekicks" routerLink="/detail/{{sidekick.id}}">
+            {{sidekick.name}}
+        </button>
+    </div>
+</div>
